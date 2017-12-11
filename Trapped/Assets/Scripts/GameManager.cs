@@ -7,6 +7,11 @@ public class GameManager : MonoBehaviour {
     public static int currScore;
     public static int currLevel = 0;
 
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public static void NextLevel()
     {
         currLevel += 1;
