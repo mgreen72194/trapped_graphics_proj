@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private Vector3 input; // Keyboard Input
     private Vector3 checkPoint; // After player is destroyed, it will be brought back to this point
-    private bool onGround;
+    private bool onGround; // Check whether the player is on ground
+    public GameObject deathEffect; // The special effect when the player is destroyed
 
     // Use this for initialization
     void Start()
@@ -46,7 +47,10 @@ public class PlayerController : MonoBehaviour
         }
 
         if (other.transform.tag == "Enemy")
+        {
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
             transform.position = checkPoint;
+        }
 
         if (other.transform.tag == "Ground")
             onGround = true;
