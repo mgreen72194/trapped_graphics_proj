@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovingPlat : MonoBehaviour {
+    public float moveSpeed;
 
 	// Use this for initialization
 	void Start () {
@@ -11,6 +12,7 @@ public class MovingPlat : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+
 	}
 }
