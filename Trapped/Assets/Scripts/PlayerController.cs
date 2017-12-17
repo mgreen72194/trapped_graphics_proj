@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 input; // Keyboard Input
     private Vector3 checkPoint; // After player is destroyed, it will be brought back to this point
     private bool onGround; // Check whether the player is on ground
+    public bool onPlate; // Check whether the player is on the moving plate
     public GameObject deathEffect; // The special effect when the player is destroyed
 
     // Use this for initialization
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         checkPoint = transform.position;
         onGround = true;
+        onPlate = false;
     }
 
     // Update is called once per frame
@@ -34,7 +36,7 @@ public class PlayerController : MonoBehaviour
             onGround = false;
         }
 
-        if (transform.position.y < -2) // Bring player back to check point if failing off the stage
+        if (transform.position.y < -2 && !onPlate) // Bring player back to check point if failing off the stage
             transform.position = checkPoint;
     }
 
@@ -57,6 +59,9 @@ public class PlayerController : MonoBehaviour
 
         if (other.transform.tag == "Portal")
             GameManager.NextLevel();
+
+        if (other.transform.tag == "MovingPlatform")
+            onPlate = true ;
     }
 
 }
