@@ -72,5 +72,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
     - _Color: {r: 0.14705884, g: 0.14705884, b: 0.14705884, a: 1}
+=======
+    - _Color: {r: 0.03676468, g: 0.03676468, b: 0.03676468, a: 1}
+>>>>>>> matthew's-textures
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
