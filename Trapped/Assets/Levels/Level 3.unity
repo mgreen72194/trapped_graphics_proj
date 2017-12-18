@@ -881,7 +881,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 314325387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.144, y: 0.432, z: -0.302}
+  m_LocalPosition: {x: 0.13, y: 0.432, z: -0.302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1018170831}
@@ -1316,15 +1316,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: 4bf0426250bd8654d81303dc4ad9a0f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.9
+      value: -5.72
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4bf0426250bd8654d81303dc4ad9a0f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4bf0426250bd8654d81303dc4ad9a0f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.27
+      value: -2.83
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4bf0426250bd8654d81303dc4ad9a0f3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2777,6 +2777,7 @@ MonoBehaviour:
   onPlate: 0
   deathEffect: {fileID: 1153355047557602, guid: 14c6bf4fc3a1a8d4a862c3849fcd1288,
     type: 2}
+  mat: {fileID: 0}
 --- !u!54 &1058890192
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3106,7 +3107,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1235778022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.144, y: 0.432, z: -0.302}
+  m_LocalPosition: {x: -0.55, y: 0.432, z: -0.302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425605723}
@@ -3122,7 +3123,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.75735295, g: 0.48452154, b: 0.13921927, a: 1}
-  m_Intensity: 1
+  m_Intensity: 5.32
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -3427,15 +3428,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400008, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.24
+      value: -7.84
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.988005
+      value: -20.42
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 82.9
+      value: 82.61
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3472,6 +3473,18 @@ Prefab:
     - target: {fileID: 100008, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
       propertyPath: m_Name
       value: TreasureChest
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
+      propertyPath: m_TagString
+      value: EndGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400006, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400004, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}

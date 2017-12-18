@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Portal
   - MovingPlatform
+  - EndGame
   layers:
   - Default
   - TransparentFX
