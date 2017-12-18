@@ -5,6 +5,7 @@
 fix robot animations to look better
 make clouds
 write-up
+change player into "person" at the end
 
 (Jason) TO DO:
 
