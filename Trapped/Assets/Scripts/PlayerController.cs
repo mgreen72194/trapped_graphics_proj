@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private bool onGround; // Check whether the player is on ground
     public bool onPlate; // Check whether the player is on the moving plate
     public GameObject deathEffect; // The special effect when the player is destroyed
+	public Material mat;
 
     // Use this for initialization
     void Start()
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
         checkPoint = transform.position;
         onGround = true;
         onPlate = false;
+		mat = GetComponent<Renderer> ().material;
     }
 
     // Update is called once per frame
@@ -62,6 +64,10 @@ public class PlayerController : MonoBehaviour
 
         if (other.transform.tag == "MovingPlatform")
             onPlate = true ;
+
+		if (other.transform.tag == "EndGame") {
+			mat.color = Color.red;
+		}
     }
 
 }

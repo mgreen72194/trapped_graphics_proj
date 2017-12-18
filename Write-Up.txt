@@ -1,0 +1,15 @@
+**Put any work done in here for write-up*
+i.e Added reflective portal effective to show mirror textures.
+CIte AxeyWorks from Unity asset store.
+
+
+created trees and arm animation in blender
+
+used built in unity reflection probe in order to add reflective surfaces to different meshes
+
+made the feel of dim light in underground areas 
+
+used convex mesh on hills in order to stop from being able to jump from beneath as it adds collision boxes underneath
+
+
+
