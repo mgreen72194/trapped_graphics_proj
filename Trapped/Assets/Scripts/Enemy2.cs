@@ -20,7 +20,7 @@ public class Enemy2 : MonoBehaviour
     {
         float distance = Vector3.Distance(player.transform.position, standingPoint.position);
 
-        if(distance<10)
+        if(distance<7)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
         }
