@@ -1,23 +1,26 @@
 fileFormatVersion: 2
-guid: c908ab4b70f3da14996186c4ac14f416
-timeCreated: 1513633235
+guid: bec25e55e7d8e7541970dda6a3451e9f
+timeCreated: 1513692272
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Cone
-    100002: Cylinder
-    100004: //RootNode
-    400000: Cone
-    400002: Cylinder
-    400004: //RootNode
-    2300000: Cone
-    2300002: Cylinder
-    3300000: Cone
-    3300002: Cylinder
-    4300000: Cylinder
-    4300002: Cone
-    7400000: Default Take
+    100000: //RootNode
+    100002: Cube
+    100004: Cube.001
+    400000: //RootNode
+    400002: Cube
+    400004: Cube.001
+    2300000: Cube
+    2300002: Cube.001
+    3300000: Cube
+    3300002: Cube.001
+    4300000: Cube.001
+    4300002: Cube
+    7400000: Cube.001|Cube.001Action
+    7400002: Cube.001|CubeAction
+    7400004: Cube|Cube.001Action
+    7400006: Cube|CubeAction
     9500000: //RootNode
   materials:
     importMaterials: 1

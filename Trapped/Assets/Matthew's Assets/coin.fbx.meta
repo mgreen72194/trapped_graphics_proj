@@ -1,24 +1,15 @@
 fileFormatVersion: 2
-guid: 495cdcfa4bfb83c4dafb78c68510be66
-timeCreated: 1513628134
+guid: 587dc63f19304024083c5715e4b69a67
+timeCreated: 1513692271
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
-    100004: Cube_001
     400000: //RootNode
-    400002: Cube
-    400004: Cube_001
-    2300000: Cube
-    2300002: Cube_001
-    3300000: Cube
-    3300002: Cube_001
-    4300000: Cube_001
-    4300002: Cube
-    7400000: Default Take
-    9500000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Sphere
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,7 +79,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -1,44 +1,22 @@
 fileFormatVersion: 2
-guid: cbd2f73108c34db4da069937fe077b22
-timeCreated: 1513624966
+guid: 39468e55b9d29114db2eabd6ba9da1a8
+timeCreated: 1513692271
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: Cone
-    100002: Cone_001
-    100004: Cone_002
-    100006: Cone_003
-    100008: Cone_004
-    100010: Cylinder
-    100012: //RootNode
+    100002: Icosphere
+    100004: //RootNode
     400000: Cone
-    400002: Cone_001
-    400004: Cone_002
-    400006: Cone_003
-    400008: Cone_004
-    400010: Cylinder
-    400012: //RootNode
+    400002: Icosphere
+    400004: //RootNode
     2300000: Cone
-    2300002: Cone_001
-    2300004: Cone_002
-    2300006: Cone_003
-    2300008: Cone_004
-    2300010: Cylinder
+    2300002: Icosphere
     3300000: Cone
-    3300002: Cone_001
-    3300004: Cone_002
-    3300006: Cone_003
-    3300008: Cone_004
-    3300010: Cylinder
-    4300000: Cone_004
-    4300002: Cone_003
-    4300004: Cone_002
-    4300006: Cone_001
-    4300008: Cone
-    4300010: Cylinder
-    7400000: Default Take
-    9500000: //RootNode
+    3300002: Icosphere
+    4300000: Icosphere
+    4300002: Cone
   materials:
     importMaterials: 1
     materialName: 0
@@ -108,7 +86,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

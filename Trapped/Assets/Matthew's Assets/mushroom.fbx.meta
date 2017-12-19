@@ -1,24 +1,22 @@
 fileFormatVersion: 2
-guid: 4bf0426250bd8654d81303dc4ad9a0f3
-timeCreated: 1513616758
+guid: 9a0a4ab1f68c68b4e937aa2bd0ca2748
+timeCreated: 1513692541
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: Cone
-    100002: Icosphere
+    100002: Cylinder
     100004: //RootNode
     400000: Cone
-    400002: Icosphere
+    400002: Cylinder
     400004: //RootNode
     2300000: Cone
-    2300002: Icosphere
+    2300002: Cylinder
     3300000: Cone
-    3300002: Icosphere
-    4300000: Icosphere
+    3300002: Cylinder
+    4300000: Cylinder
     4300002: Cone
-    7400000: Default Take
-    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,7 +86,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
