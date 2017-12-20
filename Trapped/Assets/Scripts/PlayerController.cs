@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,14 +14,18 @@ public class PlayerController : MonoBehaviour
     public bool onPlate; // Check whether the player is on the moving plate
     public GameObject deathEffect; // The special effect when the player is destroyed
 	public Material mat;
+    private int count; // Count how many objects have been collected
+    public Text score;
 
     // Use this for initialization
     void Start()
     {
+        int count = 0;
         rb = GetComponent<Rigidbody>();
         checkPoint = transform.position;
         onGround = true;
         onPlate = false;
+        score.text = "Count: " + count.ToString();
 		mat = GetComponent<Renderer> ().material;
     }
 
@@ -38,7 +43,10 @@ public class PlayerController : MonoBehaviour
             onGround = false;
         }
 
-        if (transform.position.y < -2 && !onPlate) // Bring player back to check point if failing off the stage
+        if (transform.position.y < -7 && !onPlate) // Bring player back to check point if failing off the stage
+            transform.position = checkPoint;
+
+        if (onPlate && transform.position.y < -23)
             transform.position = checkPoint;
     }
 
@@ -68,6 +76,16 @@ public class PlayerController : MonoBehaviour
 		if (other.transform.tag == "EndGame") {
 			mat.color = Color.red;
 		}
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Collectible")
+        {
+            other.gameObject.SetActive(false);
+            count += 1;
+            score.text = "Count: " + count.ToString();
+        }
     }
 
 }
