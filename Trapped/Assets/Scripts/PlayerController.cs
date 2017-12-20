@@ -13,8 +13,9 @@ public class PlayerController : MonoBehaviour
     private bool onGround; // Check whether the player is on ground
     public bool onPlate; // Check whether the player is on the moving plate
     public GameObject deathEffect; // The special effect when the player is destroyed
-	public Material mat;
+	private Material mat;
     private int count; // Count how many objects have been collected
+    public int total; // Total number of collectible objects we have
     public Text score;
 
     // Use this for initialization
@@ -25,8 +26,9 @@ public class PlayerController : MonoBehaviour
         checkPoint = transform.position;
         onGround = true;
         onPlate = false;
-        score.text = "Count: " + count.ToString();
-		mat = GetComponent<Renderer> ().material;
+        if(score != null)
+            score.text = "Count: " + count.ToString() + " out of " + total;
+        mat = GetComponent<Renderer>().material;
     }
 
     // Update is called once per frame
@@ -84,7 +86,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count += 1;
-            score.text = "Count: " + count.ToString();
+            score.text = "Count: " + count.ToString() + " out of " + total;
         }
     }
 
