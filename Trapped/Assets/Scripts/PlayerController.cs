@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         onGround = true;
         onPlate = false;
         if(score != null)
-            score.text = "Count: " + count.ToString() + " out of " + total;
+            score.text = "Collectible: " + count.ToString() + " out of " + total;
         mat = GetComponent<Renderer>().material;
     }
 
@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count += 1;
-            score.text = "Count: " + count.ToString() + " out of " + total;
+            score.text = "Collectible: " + count.ToString() + " out of " + total;
         }
     }
 
