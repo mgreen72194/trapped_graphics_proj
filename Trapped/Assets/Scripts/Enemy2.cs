@@ -22,7 +22,10 @@ public class Enemy2 : MonoBehaviour
 
         if(distance<7)
         {
+			Vector3 lookDir = Vector3.RotateTowards (transform.position, player.transform.position, 10f, 10f);
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+
+			transform.rotation = Quaternion.LookRotation (lookDir);
         }
 
     }
