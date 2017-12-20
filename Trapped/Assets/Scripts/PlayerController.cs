@@ -13,10 +13,11 @@ public class PlayerController : MonoBehaviour
     private bool onGround; // Check whether the player is on ground
     public bool onPlate; // Check whether the player is on the moving plate
     public GameObject deathEffect; // The special effect when the player is destroyed
-	private Material mat;
+    public GameObject human;
     private int count; // Count how many objects have been collected
     public int total; // Total number of collectible objects we have
     public Text score;
+    public Text endGameText;
 
     // Use this for initialization
     void Start()
@@ -28,7 +29,6 @@ public class PlayerController : MonoBehaviour
         onPlate = false;
         if(score != null)
             score.text = "Collectible: " + count.ToString() + " out of " + total;
-        mat = GetComponent<Renderer>().material;
     }
 
     // Update is called once per frame
@@ -48,8 +48,11 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y < -7 && !onPlate) // Bring player back to check point if failing off the stage
             transform.position = checkPoint;
 
-        if (onPlate && transform.position.y < -23)
+        if (onPlate && transform.position.y < -23) // Make sure player will be destoryed after getting on the plate
             transform.position = checkPoint;
+
+        if (Input.GetKey("escape")) // Exit the game in the full screen mode
+            Application.Quit();
     }
 
     void OnCollisionEnter(Collision other)
@@ -76,8 +79,10 @@ public class PlayerController : MonoBehaviour
             onPlate = true ;
 
 		if (other.transform.tag == "EndGame") {
-			mat.color = Color.red;
-		}
+            gameObject.SetActive(false);
+            Instantiate(human, new Vector3(transform.position.x, transform.position.y, transform.position.z-5), Quaternion.identity);
+            endGameText.text = "Congratulation! You are free from your entrapment.";
+        }
     }
 
     void OnTriggerEnter(Collider other)

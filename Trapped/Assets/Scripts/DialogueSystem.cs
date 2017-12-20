@@ -22,6 +22,7 @@ public class DialogueSystem : MonoBehaviour {
         dialogueList.Add("Welcome to Trapped!");
         dialogueList.Add("The goal of this level is finding the portal.");
         dialogueList.Add("Also try to find some collectible objects along the way");
+        dialogueList.Add("Press Esc if you want to quit the game");
 
         if (Instance != null && Instance != this)
             Destroy(gameObject);
