@@ -21,6 +21,7 @@ public class DialogueSystem : MonoBehaviour {
         dialogueList = new List<string>();
         dialogueList.Add("Welcome to Trapped!");
         dialogueList.Add("The goal of this level is finding the portal.");
+        dialogueList.Add("Also try to find some collectible objects along the way");
 
         if (Instance != null && Instance != this)
             Destroy(gameObject);
