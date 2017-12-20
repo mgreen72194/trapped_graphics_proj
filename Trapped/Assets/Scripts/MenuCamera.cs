@@ -54,8 +54,9 @@ public class MenuCamera : MonoBehaviour
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
             Vector3 position = rotation * negDistance + target.position;
 
-            transform.rotation = rotation;
+			transform.rotation = rotation;
             transform.position = 0.6f * position;
         }
     }
+	//Menu camera script copied from Professor Saad Unity 5 - Game Development - Moving Camera 360 degrees on Youtube
 }
